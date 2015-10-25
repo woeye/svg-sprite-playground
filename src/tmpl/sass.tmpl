@@ -1,0 +1,17 @@
+@mixin svg-common {
+	background: url({{{sprite}}}) no-repeat;
+}
+
+{{#shapes}}.icon-{{name}}-size {
+	width: {{width.outer}}px;
+	height: {{height.outer}}px;
+}
+{{/shapes}}
+
+{{#shapes}}.icon-{{name}} {
+	@extend .icon-{{name}}-size;
+	@include svg-common;
+	background-position: {{position.relative.xy}};
+}
+{{/shapes}}
+

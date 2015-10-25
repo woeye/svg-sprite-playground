@@ -1,0 +1,11 @@
+{
+  "name": "svg_test",
+  "description": "Playing around with SVG stuff",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-serve": "^1.2.0",
+    "gulp-svg-sprite": "^1.2.12"
+  }
+}
