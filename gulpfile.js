@@ -4,17 +4,7 @@ var sass = require('gulp-sass');
 var serve = require('gulp-serve');
 
 var svgOpts = {
-	mode: {
-		css: {
-			bust: false,
-			render: {
-				scss: {
-					dest: '_sprite.scss',
-					template: 'src/tmpl/sass.tmpl'
-				}
-			}
-		}
-	}
+	mode: 'symbol'
 };
 
 gulp.task('watch', function() {

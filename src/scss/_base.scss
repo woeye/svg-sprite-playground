@@ -13,54 +13,30 @@ button {
 		position: relative;		
 	}
 
-	&.circle {
-		span:before {
-			position: absolute;
-			display: inline-block;
-			content: '';
-			left: -24px;
-			top: 0px;
-			@extend .icon-circle;
-		}
-	}
-
-	&.triangle-up {
-		span:before {
-			position: absolute;
-			display: inline-block;
-			content: '';
-			left: -24px;
-			top: 2px;
-			@extend .icon-triangle_up;
-		}
-	}
-
-	&.triangle-down {
-		span:before {
-			position: absolute;
-			display: inline-block;
-			content: '';
-			left: -24px;
-			top: 2px;
-			@extend .icon-triangle_down;
-		}
-	}
 }
 
-.bar {
-	position: relative;
-	margin-top: 20px;
-	padding: 20px;
-	color: #333;
-	background-color: #dfdfdf;
+.icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
 
-	&:after {
-		position: absolute;
-		display: inline-block;
-		content: '';
-		right: 20px;
-		top: 50%;
-		margin-top: -10px;
-		@extend .icon-circle;
+.red {
+	fill: #f00;
+}
+
+.green {
+	fill: #0f0;
+}
+
+.blue {
+	fill: #00f;
+}
+
+.scale {
+	transition: transform 0.25s ease-in;
+
+	&:hover {
+		transform: scale(1.6);
 	}
 }
